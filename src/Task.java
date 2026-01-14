@@ -22,11 +22,11 @@ class Task {
     @Override
     public String toString() {
         return String.format("[%s] %s (Öncelik: %d) - Durum %s", id,
-            name, priority, status) 
+            name, priority, status);
    }
 
    public String toNetworkString() {
-    return String.format("%s|%s|%s|%d", id, name, command, priority)
+    return String.format("%s|%s|%s|%d", id, name, command, priority);
 
    }
 
