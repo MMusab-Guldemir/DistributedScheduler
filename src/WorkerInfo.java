@@ -25,4 +25,4 @@ public class WorkerInfo {
         return String.format("[%s] %s @ %s:%d - Tasks: %d - Alive: %s", 
             id, name, host, port, taskCount, isAlive ? "✅" : "❌");
     }
-}
+} 

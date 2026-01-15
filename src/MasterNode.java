@@ -12,7 +12,7 @@ public class MasterNode extends Node {
     private ServerSocket serverSocket;
     private final List<Task> tasks = new CopyOnWriteArrayList<>();
     private final Map<String, WorkerInfo> workers = new ConcurrentHashMap<>();
-    private final AtomicInteger roundRobinIndex = new AtomicInteger(0);
+    private final AtomicInteger  roundRobinIndex = new AtomicInteger(0);
     private ExecutorService threadPool;
     
     public MasterNode(String name, int port) {
